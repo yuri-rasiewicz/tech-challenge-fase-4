@@ -1,0 +1,33 @@
+variavel,importancia,variavel_traduzida,importancia_percentual
+BMI,0.3081418699924613,IMC,30.81
+Weight,0.20080206170455583,Peso,20.08
+Age,0.06001914337642438,Idade,6.0
+FCVC,0.05795548374400396,Consumo de Vegetais,5.8
+Height,0.05239784995062859,Altura,5.24
+NCP,0.03285714084066575,Refeições Principais,3.29
+Gender_Male,0.030483160878231465,Gênero Masculino,3.05
+Gender_Female,0.028063676422837105,Gênero Feminino,2.81
+TUE,0.02761738187931296,Uso de Tecnologia,2.76
+FAF,0.02744269775074507,Atividade Física,2.74
+CH2O,0.026969378953018066,Consumo de Água,2.7
+family_history_no,0.017752246148360178,Histórico Familiar: Não,1.78
+CALC_Sometimes,0.016221916507754338,Álcool: Às vezes,1.62
+family_history_yes,0.01603612714589624,Histórico Familiar: Sim,1.6
+CAEC_Sometimes,0.013965489542736144,Lanches entre Refeições: Às vezes,1.4
+CALC_no,0.01327489480069996,Álcool: Não,1.33
+CAEC_Frequently,0.013219432588235689,Lanches entre Refeições: Frequentemente,1.32
+MTRANS_Public_Transportation,0.01023466468689166,Transporte: Público,1.02
+MTRANS_Automobile,0.009477614957141353,Transporte: Automóvel,0.95
+FAVC_no,0.008842802501407624,Alimentos Calóricos: Não,0.88
+FAVC_yes,0.008351234136626518,Alimentos Calóricos: Sim,0.84
+SCC_no,0.0038748559756503543,Monitora Calorias: Não,0.39
+SCC_yes,0.003375410890757405,Monitora Calorias: Sim,0.34
+CALC_Frequently,0.002765699356062124,Álcool: Frequentemente,0.28
+CAEC_Always,0.002349054543253145,Lanches entre Refeições: Sempre,0.23
+CAEC_no,0.0021080352908939086,Lanches entre Refeições: Não,0.21
+MTRANS_Walking,0.001980907275749797,Transporte: Caminhada,0.2
+SMOKE_yes,0.001416768529100493,Fuma: Sim,0.14
+SMOKE_no,0.0013993636740152289,Fuma: Não,0.14
+MTRANS_Motorbike,0.00032539211215431554,Transporte: Moto,0.03
+MTRANS_Bike,0.00025287225222119474,Transporte: Bicicleta,0.03
+CALC_Always,2.537159150781384e-05,Álcool: Sempre,0.0

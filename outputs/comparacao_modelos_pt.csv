@@ -1,0 +1,4 @@
+Modelo,Acurácia,F1-score Macro,Precisão Macro,Recall Macro
+Random Forest,98.09,98.04,98.15,98.04
+Decision Tree,96.89,96.81,96.85,96.78
+Logistic Regression,92.58,92.30,92.28,92.42

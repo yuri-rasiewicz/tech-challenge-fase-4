@@ -1,0 +1,15 @@
+Tech Challenge Fase 4 — Data Viz and Production Models
+
+Projeto: Sistema Preditivo para Classificação do Nível de Obesidade
+
+Link da aplicação Streamlit:
+[cole aqui o link da aplicação publicada]
+
+Link do painel analítico:
+[cole aqui o mesmo link da aplicação, indicando a seção Dashboard Analítico]
+
+Link do repositório GitHub:
+[cole aqui o link do repositório]
+
+Observação:
+A aplicação Streamlit contém duas partes principais: dashboard analítico e sistema preditivo. O repositório contém o notebook final, a pipeline treinada, os dados tratados, os arquivos auxiliares e o código da aplicação.
