@@ -883,8 +883,30 @@ elif pagina == "Sistema Preditivo":
             step=1.0,
             help="A base de treinamento contém idades entre 14 e 61 anos. Valores acima de 61 são aceitos, mas representam extrapolação e exigem maior cautela na interpretação."
         )
-        altura = col3.number_input("Altura (m)", min_value=1.40, max_value=2.10, value=1.70, step=0.01)
-        peso = col4.number_input("Peso (kg)", min_value=35.0, max_value=180.0, value=75.0, step=0.5)
+        altura = col3.number_input(
+            "Altura (m)",
+            min_value=1.20,
+            max_value=2.30,
+            value=1.70,
+            step=0.01,
+            help=(
+                "A base de treinamento contém alturas entre 1,45 m e 1,98 m. "
+                "Valores fora desse intervalo são aceitos, mas representam extrapolação "
+                "e exigem maior cautela na interpretação."
+            )
+        )
+        peso = col4.number_input(
+            "Peso (kg)",
+            min_value=30.0,
+            max_value=300.0,
+            value=75.0,
+            step=0.5,
+            help=(
+                "A base de treinamento contém pesos entre 39 kg e 173 kg. "
+                "Valores fora desse intervalo são aceitos, mas representam extrapolação "
+                "e exigem maior cautela na interpretação."
+            )
+        )
 
         bmi = peso / (altura ** 2)
         st.caption(f"IMC calculado automaticamente: **{bmi:.2f}**")
@@ -919,11 +941,25 @@ elif pagina == "Sistema Preditivo":
     )
 
     if submit:
+        campos_fora_da_base = []
+
         if idade > 61:
+            campos_fora_da_base.append("idade (base: 14 a 61 anos)")
+
+        if altura < 1.45 or altura > 1.98:
+            campos_fora_da_base.append("altura (base: 1,45 m a 1,98 m)")
+
+        if peso < 39 or peso > 173:
+            campos_fora_da_base.append("peso (base: 39 kg a 173 kg)")
+
+        if campos_fora_da_base:
             st.warning(
-                "A idade informada está acima do intervalo observado na base de treinamento (14 a 61 anos). "
-                "A previsão será gerada, mas deve ser interpretada com cautela por representar extrapolação do modelo."
+                "Um ou mais valores informados estão fora dos intervalos observados na base de treinamento: "
+                + "; ".join(campos_fora_da_base)
+                + ". A previsão será gerada, mas deve ser interpretada com maior cautela, "
+                  "pois representa extrapolação do modelo."
             )
+
         entrada = pd.DataFrame([{
             "Gender": {"Feminino": "Female", "Masculino": "Male"}[genero_pt],
             "Age": idade,
