@@ -11,7 +11,6 @@ tech-challenge-fase-4-obesidade/
 │
 ├── app.py
 ├── requirements.txt
-├── runtime.txt
 ├── README.md
 │
 ├── data/
